@@ -1,0 +1,62 @@
+<!--Skeleton of webpage defining layout and features to user--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LU Decomposition Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Load MathJax for Latex typset-->
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    </head>
+
+<body>
+
+<h1>LU Decomposition Calculator</h1>
+
+<p style="font-size: 1rem; color: #777; margin-top: -10px">
+    Input an n x n matrix and compute its LU decomposition using Gaussian elimination.
+</p>
+
+<div class="container">
+    <!--Input matrix on textarea -->
+    <label for="matrixSize">Enter matrix size (n x n):</label>
+    <input type="number" id="matrixSize" min="1">
+    <button onclick="generateMatrix()">Generate Matrix</button>
+    <button onclick="clearMatrix()">Clear</button>
+
+    <!--Contain input values into dynamic matrix-->
+    <div id="matrixInputGrid" class=""matrix-grid"></div>
+ 
+    <!--Display button to call LU Decomp function-->
+    <button onclick="computeLU()">Compute LU</button>
+
+</div>
+
+<!--Shared class subheadings-->
+<h2 class="matrix-section" id="originalHeading">Original Matrix:</h2>
+<div id="original"></div>
+
+<h2 class="matrix-section" id="upperHeading">Upper Triangular Matrix (U):</h2>
+<div id="upper"></div>
+
+<h2 class="matrix-section" id="lowerHeading">Lower Triangular Matrix (L):</h2>
+<div id="lower"></div>
+
+<!--Script import lu.js-->
+<script src="lu.js" defer></script>
+</body>
+</html>
+
+<h3 id="desc">What is the LU Decomposition?</h3>
+<div id="description">
+    <p>
+        Introduced in 1948 by Alan Turing, the LU decomposition is a technique
+        of solving linear systems by factorizing a square matrix A into two triangular
+        matrices: one upper (U) and one lower (L). The upper triangle is a reduced row
+        echelon form containing all linear entry pivot columns, while lower triangle encodres
+        encodes all elementary operations on A.
+    </p>
+</div>
