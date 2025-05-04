@@ -3,9 +3,11 @@
 A web-based calculator that performs LU decomposition on any square matrix using **Gaussian elimination**. Built with vanilla HTML, CSS, and JavaScript, it dynamically computes and displays the **L** and **U** matrices with LaTeX-style formatting using MathJax.
 
 ## AUTHOR 
+```bash
 Aditya Chatterjee
 LinkedIn: https://www.linkedin.com/in/adityaxchatterjee/
 Email: chat.aditya03@gmail.com
+```
 
 ## FEATURES
 
@@ -57,6 +59,6 @@ Copy code
 ├── style.css         # Styling for UI
 ├── lu.js             # JavaScript logic for LU decomposition
 ├── README.md         # Project documentation
-
+```
 ## LICENSE
 This project is open source and available under the MIT License.
