@@ -49,6 +49,7 @@ open index.html  # or just drag into your browser
 No additional dependencies required.
 
 ## PROJECT STRUCTURE
+```bash
 graphql
 Copy code
 .
